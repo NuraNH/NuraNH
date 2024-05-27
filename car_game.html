@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Game</title>
+    <link rel="stylesheet" href="car_game.css">
+</head>
+<body>
+    <div class="main">
+        <div class="side">
+            <img src="IMG_5374.jpeg" class="side2" alt="sideways">
+            <button class="left" onclick="
+                
+            ">left</button>
+        </div>
+        <div class="road">
+            <img src="IMG_5373.jpeg" class="road1" alt="road">
+            <img src="HEIF Image.jpeg" class="car1" alt="car2">
+            <img src="HEIF Image1.jpeg" class="car2" alt="car2">
+            <img src="HEIF Image2.jpeg" class="car3" alt="car3">
+            <img src="HEIF Image3.jpeg" class="car4" alt="car4">
+        </div>
+        <div class="side">
+            <img src="IMG_5376.jpeg" class="side2" alt="sideways">
+            <button class="start" onclick="
+                n+=1;
+                if (n%2==0){
+                    a=document.querySelector('.stop');
+                    a.className='start';
+                    a.innerHTML='Start';
+                }else{
+                    a=document.querySelector('.start');
+                    a.className='stop';
+                    a.innerHTML='Stop';
+                }
+            ">Start</button>
+
+            <button class="right" onclick="
+
+            ">right</button>
+        </div>
+        <img src="cat.jpeg" class="cat" alt="cat">
+    </div>
+    <script>
+        let n=0;
+    </script>
+</body>
+</html>

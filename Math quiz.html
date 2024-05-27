@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math quiz</title>
+        <style>
+
+            .all1{
+                padding-top: 20px;
+            }
+
+            .all{
+                width: 430px;
+                margin: auto;
+                background-color: gray;
+                text-align: center;
+                border-radius: 10px;
+                border: none;
+                background-color: #FF5C00;
+                box-shadow: 5px 5px 10px 2px rgba(255,92,0,.5);
+            }
+
+            .title{
+                font-size: 25px;
+                color: white;
+                background-color: black;
+                font-weight: bold;
+                border: none;
+                border-radius: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .te{
+                color: black;
+                background-color: white;
+                border: 3px solid;
+                border-radius: 10px;
+                border-color: balck;
+                width: 93%;
+                font-size: 18px;
+                text-align: left;
+                font-weight: bold;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+            .text{
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            
+            .qd{
+                padding-bottom: 15px;
+            }
+
+            .b1{
+                padding-bottom: 15px;
+            }
+
+            .b2{
+                padding-bottom: 15px;
+            }
+
+            .b3{
+                padding-bottom: 15px;
+            }
+
+            .b4{
+                padding-bottom: 15px;
+            }
+
+
+
+
+
+
+
+            .b11{
+                width: 90%;
+                text-align: left;
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                background-color: #FF5C00;
+                border: 2px solid;
+                border-color: black;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .b22{
+                width: 90%;
+                text-align: left;
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                background-color: #FF5C00;
+                border: 2px solid;
+                border-color: black;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .b33{
+                width: 90%;
+                text-align: left;
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                background-color: #FF5C00;
+                border: 2px solid;
+                border-color: black;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .b44{
+                width: 90%;
+                text-align: left;
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                background-color: #FF5C00;
+                border: 2px solid;
+                border-color: black;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+
+
+
+
+
+
+            .next{
+                padding-bottom: 10px;
+                display: flex;
+            }
+
+
+            .div1{
+                text-align: center;
+                width: 50%;
+            }
+
+            .div2{
+                text-align: center;
+                width: 50%;
+            }
+            .ne{
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-weight: bold;
+                font-size: 15px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .score{
+                background-color: black;
+                color: white;
+                border: none;
+                border-radius: 10px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                font-weight: bold;
+                font-size: 15px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+
+
+
+
+
+            .green{
+                width: 90%;
+                text-align: left;
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                background-color: green;
+                border: 2px solid;
+                border-color: black;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .red{
+                width: 90%;
+                text-align: left;
+                font-weight: bold;
+                font-size: 15px;
+                color: black;
+                background-color: red;
+                border: 2px solid;
+                border-color: black;
+                border-radius: 5px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            #final{
+                display: none;
+                color: black;
+                background-color: #FF5C00;
+                font-size: 12px;
+                border: 2px solid;
+                border-color: black;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            .big{
+                text-align: center;
+                display: flex;
+            }
+            .small1{
+                text-align: center;
+            }
+            .small2{
+                padding-top: 30px;
+                text-align: center;
+            }
+
+
+            .img1{
+                width: 95%;
+                border: 5px solid;
+                border-color: #00559A;
+                border-radius: 50px;
+                box-shadow: 10px 10px 10px rgb(0,85,154, 0.8);
+            }
+            .hmab{
+                font-size: 50px;
+                font-weight: bold;
+                background-color: white;
+                color: black;
+                border-radius: 30px;
+                padding-top: 25px;
+                padding-bottom: 25px;
+                text-align: center;
+                border: 5px solid;
+                border-color: #00559A;
+                box-shadow: 10px 10px 10px rgb(0,85,154, 0.8);
+            }
+        </style>
+    </head>
+
+    <body style="background-color: black;">
+        <div class="big">
+            <div class="small1">
+                <img class="img1" src="IMG_5353.jpeg" alt="HMA">
+            </div>
+            <div class="small2">
+                <button class="hmab">HMA</button>
+            </div>
+            <div class="small1">
+                <img class="img1" src="IMG_5353.jpeg" alt="HMA">
+            </div>
+        </div>
+        <div class="all1">
+            <div class="all">
+                <div class="text">
+                    <button class="title">Math quiz</button>
+                </div>
+        
+                <div class="qd">
+                    <button class="te"></button>
+                </div>
+        
+                <div class="b1">
+                    <button class="b11" id="b111" onclick="
+                        if (n===2) {
+                            let a = document.getElementById('b111');
+                            a.className = 'green';
+                        } else if (n===6){
+                            let a = document.getElementById('b111');
+                            a.className = 'green';
+                        } else if (n===7) {
+                            let a = document.getElementById('b111');
+                            a.className = 'green';
+                        } else if (n===8){
+                            let a = document.getElementById('b111');
+                            a.className = 'green';
+                        }else if(n <= 10){
+                            let a = document.getElementById('b111');
+                            a.className = 'red';
+                            
+                            if (n==1){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==3){
+                                let a = document.getElementById('b222');
+                                a.className = 'green';
+                            } else if (n==4){
+                                let a = document.getElementById('b333');
+                                a.className = 'green';
+                            } else if (n==5){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==9){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==10){
+                                let a = document.getElementById('b333');
+                                a.className = 'green';
+                            }
+                        }
+                    "></button>
+                </div>
+        
+                <div class="b2">
+                    <button class="b22" id="b222" onclick="
+                        if (n===3) {
+                            let a = document.getElementById('b222');
+                            a.className = 'green';
+                        }else if(n <= 10){
+                            let a = document.getElementById('b222');
+                            a.className = 'red';
+
+                            if (n==1){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==2){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==4){
+                                let a = document.getElementById('b333');
+                                a.className = 'green';
+                            } else if (n==5){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==6){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==7){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==8){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==9){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==10){
+                                let a = document.getElementById('b333');
+                                a.className = 'green';
+                            }
+                        }
+                    "></button>
+                </div>
+        
+                <div class="b3">
+                    <button class="b33" id="b333" onclick="
+                        if (n===4) {
+                            let a = document.getElementById('b333');
+                            a.className = 'green';
+                        } else if (n===10){
+                            let a = document.getElementById('b333');
+                            a.className = 'green';
+                        }else if(n <= 10){
+                            let a = document.getElementById('b333');
+                            a.className = 'red';
+
+                            if (n==1){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==2){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==3){
+                                let a = document.getElementById('b222');
+                                a.className = 'green';
+                            } else if (n==5){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            } else if (n==6){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==7){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==8){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==9){
+                                let a = document.getElementById('b444');
+                                a.className = 'green';
+                            }
+                        }
+                    "></button>
+                </div>
+        
+                <div class="b4">  
+                    <button class="b44" id="b444" onclick="
+                        if (n===1) {
+                            let a = document.getElementById('b444');
+                            a.className = 'green';
+                        } else if (n===5){
+                            let a = document.getElementById('b444');
+                            a.className = 'green';
+                        } else if (n===9) {
+                            let a = document.getElementById('b444');
+                            a.className = 'green';
+                        }else if(n <= 10){
+                            let a = document.getElementById('b444');
+                            a.className = 'red';
+
+                            if (n==2){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==3){
+                                let a = document.getElementById('b222');
+                                a.className = 'green';
+                            } else if (n==4){
+                                let a = document.getElementById('b333');
+                                a.className = 'green';
+                            } else if (n==6){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==7){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==8){
+                                let a = document.getElementById('b111');
+                                a.className = 'green';
+                            } else if (n==10){
+                                let a = document.getElementById('b333');
+                                a.className = 'green';
+                            }
+                        }
+                    "></button>
+                </div>
+
+                <div class="next">
+                    <div class="div1" id="d1">
+                        <button class="score">Score = 0</button>
+                    </div>
+
+                    <div class="div2" id="d2">
+                        <button class="ne" onclick="
+                            n+=1
+                            score();
+                            if (n>10){
+                                document.getElementById('d2').style.display = 'none';
+                                document.getElementById('d1').style.width = '100%';
+                                document.querySelector('.score').innerHTML = 'Score = '+String(s)+'/10';
+                            }
+                            question();
+                            next();
+                        ">Next</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <script>
+            let n=1;
+            function question(){
+                if (n===1) {
+                    document.querySelector('.te').innerHTML='1. The equation of the line that passes through (2, - 1) and is perpendicular to 3x + 4y = 6 is:';
+                    document.getElementById('b111').innerHTML='-4x + 3y = 5';
+                    document.getElementById('b222').innerHTML='4x - 3y = 5';
+                    document.getElementById('b333').innerHTML='4x + 3y = 11';
+                    document.getElementById('b444').innerHTML='-4x + 3y = -11';
+                } else if (n===2){
+                    document.querySelector('.te').innerHTML='2. What is the equation of the line that passes through (1, 1) and is parallel to 3y - x = 1 ?';
+                    document.getElementById('b111').innerHTML='x - 3y + 2 = 0';
+                    document.getElementById('b222').innerHTML='3y - x + 2 = 0';
+                    document.getElementById('b333').innerHTML='x + 3y = 4';
+                    document.getElementById('b444').innerHTML='3x - y = 2';
+                } else if (n===3){
+                    document.querySelector('.te').innerHTML='3. If a line passes through point (3, 7) and (5, 9), then what is the degree measure of inclination that this line makes with the positive x-axis?';
+                    document.getElementById('b111').innerHTML='30 degrees';
+                    document.getElementById('b222').innerHTML='45 degrees';
+                    document.getElementById('b333').innerHTML='135 degrees';
+                    document.getElementById('b444').innerHTML='225 degrees';
+                } else if (n===4){
+                    document.querySelector('.te').innerHTML='4. If the line passes through point (2,8) and (-7, t+4) is parallel to the line passing through point (1, t) and (4, -2), then what is the value of t?';
+                    document.getElementById('b111').innerHTML='-1/2';
+                    document.getElementById('b222').innerHTML='1';
+                    document.getElementById('b333').innerHTML='-5';
+                    document.getElementById('b444').innerHTML='5/2';
+                } else if (n===5){
+                    document.querySelector('.te').innerHTML='5. Which one of the following is the equation of the line passing through the point A(1,2) and parallel to the line 3x + y/2 = 11?';
+                    document.getElementById('b111').innerHTML='x - 6y = -13';
+                    document.getElementById('b222').innerHTML='y - 6x = -8';
+                    document.getElementById('b333').innerHTML='x - 6y = -13';
+                    document.getElementById('b444').innerHTML='6x + y = 8';
+                } else if (n===6){
+                    document.querySelector('.te').innerHTML='6. From the following points which one is nearest to point (-2,5)?';
+                    document.getElementById('b111').innerHTML='(-4,5)';
+                    document.getElementById('b222').innerHTML='(-1,2)';
+                    document.getElementById('b333').innerHTML='(-2,9)';
+                    document.getElementById('b444').innerHTML='(0,0)';
+                } else if (n===7){
+                    document.querySelector('.te').innerHTML='7. Which one of the following is the equation of a line that is perpendicular to the line with equation 2x + 3y + 4 = 0?';
+                    document.getElementById('b111').innerHTML='3x - 2y + 4 = 0';
+                    document.getElementById('b222').innerHTML='2x + 3y - 4 = 0';
+                    document.getElementById('b333').innerHTML='-3x - 2y - 4 = 0';
+                    document.getElementById('b444').innerHTML='3y - 2x + 4 = 0';
+                } else if (n===8){
+                    document.querySelector('.te').innerHTML='8. Which of the following points in not equidistant from the points (-3, 1) and (5, 3) ?';
+                    document.getElementById('b111').innerHTML='(3,-1)';
+                    document.getElementById('b222').innerHTML='(1,2)';
+                    document.getElementById('b333').innerHTML='2,-2';
+                    document.getElementById('b444').innerHTML='(-1,10)';
+                } else if (n===9){
+                    document.querySelector('.te').innerHTML='9. What is the set of value of k if the point (k, 4) is 10 units from (0, -2)';
+                    document.getElementById('b111').innerHTML='{4,-4}';
+                    document.getElementById('b222').innerHTML='{2,-2}';
+                    document.getElementById('b333').innerHTML='{8}';
+                    document.getElementById('b444').innerHTML='{8,-8}';
+                } else if (n===10){
+                    document.querySelector('.te').innerHTML='10. The equation of the line that passes through the point (2, -1) and perpendicular to the line 2x + 4y+3=0 is given by:';
+                    document.getElementById('b111').innerHTML='-2x + y - 4 = 0';
+                    document.getElementById('b222').innerHTML='x + 2y = 0';
+                    document.getElementById('b333').innerHTML='-2x + y + 5 = 0';
+                    document.getElementById('b444').innerHTML='x - 2y + 2 = 0';
+                }
+                
+            }
+            question();
+            function next(){
+                let e = document.getElementById('b111');
+                if (e.className === 'red' || e.className === 'green'){
+                    e.className = 'b11';
+                }
+
+                let b = document.getElementById('b222');
+                if (b.className === 'red' || b.className === 'green'){
+                    b.className = 'b22';
+                }
+
+                let c = document.getElementById('b333');
+                if (c.className === 'red' || c.className === 'green'){
+                    c.className = 'b33';
+                }
+
+                let d = document.getElementById('b444');
+                if (d.className === 'red' || d.className === 'green'){
+                    d.className = 'b44';
+                }
+                
+            }
+
+            let s=0;
+            function score(){
+                let e = document.getElementById('b111');
+                let b = document.getElementById('b222');
+                let c = document.getElementById('b333');
+                let d = document.getElementById('b444');
+
+                if (e.className !== 'red' && b.className !== 'red' && c.className !== 'red' && d.className !== 'red') {
+                    if (e.className === 'green' || b.className === 'green' || c.className === 'green' || d.className === 'green') {
+                        s+=1;
+                    }
+                }
+                document.querySelector('.score').innerHTML='Score = '+String(s);
+            }
+        </script>
+    </body>
+</html>

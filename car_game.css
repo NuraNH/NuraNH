@@ -1,0 +1,142 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.side {
+    flex: 0 0 27%;
+    height: 100%;
+    background-color: seagreen;
+}
+
+.road {
+    flex: 0 0 46%;
+    height: 100%;
+    background-color: grey;
+    border-right: 15px solid dimgrey;
+    border-left: 15px solid dimgrey;
+    position: relative;
+    overflow: hidden;
+}
+
+.road1{
+    width: 100%;
+}
+
+.side2{
+    height: 100%;
+}
+
+.car1 {
+    width: 100px;
+    position: absolute;
+    right: 5px;
+    animation: drive 3s 1s infinite linear;
+    transform: translateY(900px);
+}
+
+.car2{
+    width: 85px;
+    position: absolute;
+    right: 129px;
+    animation: drive 4s 1s infinite linear;
+    transform: translateY(900px);
+}
+
+.car3{
+    width: 85px;
+    position: absolute;
+    right: 275px;
+    animation: drive 5s 1s infinite linear reverse;
+}
+
+.car4{
+    width: 85px;
+    position: absolute;
+    right: 397px;
+    animation: drive 2.5s 1s infinite linear reverse;
+    transform: translateY(250px);
+}
+
+.start{
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(252,106,3);
+    border: 5px solid black;
+    color: black;
+    top: -400px;
+    border-radius: 500px;
+    position: relative;
+    left: 75px;
+    transition: all 1s;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.8);
+}
+
+.stop{
+    background-color: rgb(207,20,43);
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px solid black;
+    top: -400px;
+    border-radius: 500px;
+    position: relative;
+    left: 75px;
+    transition: all 1s;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.8);
+}
+
+.cat{
+    width: 30px;
+    position: absolute;
+    right: 900px;
+    top: 300px;
+    transform: rotateZ(-90deg);
+}
+
+.right{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    border: 5px solid black;
+    color: white;
+    bottom: 150px;
+    border-radius: 300px;
+    position: relative;
+    right: 25px;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.8);
+}
+
+.left{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    border: 5px solid black;
+    color: white;
+    bottom: 135px;
+    border-radius: 300px;
+    position: relative;
+    left: 115px;
+    box-shadow: 5px 5px 5px rgb(0,0,0,0.8);
+}
+
+@keyframes drive {
+    from { transform: translateY(900px); }
+    to { transform: translateY(-250px); }
+}

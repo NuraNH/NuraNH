@@ -1,1 +1,472 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .main{
+                width: 410px;
+                margin: auto;
+                background-color: gray;
+                text-align: center;
+                border-radius: 20px;
+                border: none;
+                background-color: #FF5C00;
+                box-shadow: 10px 10px 10px 2px rgba(255,92,0,.5);
+            }
 
+
+
+
+            .div1{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                padding-top: 20px;
+                border: none;
+            }
+
+            .div2{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                border: none;
+            }
+
+            .div3{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                border: none;
+            }
+
+            .div4{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                border: none;
+            }
+
+            .div5{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 10px;
+                border: none;
+            }
+
+            .div6{
+                margin: auto;
+                text-align: center;
+                padding-bottom: 15px;
+                border: none;
+            }
+
+
+
+
+            .v11{
+                font-size: 40px;
+                width: 90%;
+                font-weight: bold;
+                text-align: right;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                color: black;
+                background-color: white;
+                border-radius: 10px;
+                border: none;
+            }
+
+            .v21{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v22{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v23{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v24{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+
+
+
+            .v31{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v32{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v33{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v34{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+
+
+
+            .v41{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v42{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v43{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v44{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+
+
+
+            .v51{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v52{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v53{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+            .v54{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }
+
+
+            
+
+            .v61{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }  
+
+            .v62{
+                width:20%;
+                font-size: 33px;
+                font-weight: bold;
+                border-radius: 70px;
+                padding-top: 21px;
+                padding-bottom: 21px;
+                border: none;
+                background-color: black;
+                color: white;
+                box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+            }    
+        </style>
+    </head>
+
+    <body style="background-color: black;">
+        <div class="main">
+            <div class="div1" id="mybutton">
+                <button class="v11">0</button>
+            </div>
+            <div class="div2">
+                <button class="v21" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '+';
+                    shorten();
+                ">+</button>
+
+                <button class="v22" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '7';
+                    shorten();
+                ">7</button>
+
+                <button class="v23" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '8';
+                    shorten();
+                ">8</button>
+
+                <button class="v24" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '9'; 
+                    shorten();
+                ">9</button>
+            </div>
+            <div class="div3">
+                <button class="v31" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '-';
+                    shorten();
+                ">-</button>
+
+                <button class="v32" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '4';
+                    shorten();
+                ">4</button>
+
+                <button class="v33" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '5';
+                    shorten();
+                ">5</button>
+
+                <button class="v34" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '6';
+                    shorten();
+                ">6</button>
+            </div>
+            <div class="div4">
+                <button class="v41" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '*';
+                    shorten();
+                ">*</button>
+
+                <button class="v42" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '1';
+                    shorten();
+                ">1</button>
+
+                <button class="v43" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '2';
+                    shorten();
+                ">2</button>
+
+                <button class="v44" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '3';
+                    shorten();
+                ">3</button>
+            </div>
+            <div class="div5">
+                <button class="v51" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '/';
+                    shorten();
+                ">/</button>
+
+                <button class="v52" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '0';
+                    shorten();
+                ">0</button>
+
+                <button class="v53" onclick="
+                    first();
+                    document.querySelector('.v11').innerHTML += '.';
+                    shorten();
+                ">.</button>
+
+                <button class="v54" onclick="
+                    let y = document.querySelector('.v11').innerHTML;
+                    let x = String(eval(y));
+                    if (x.length > 9){
+                        if (x[0] !== '0'){
+                            document.querySelector('.v11').innerHTML = x[0]+' * '+'10^'+String(x.slice(1,-1).length+1);
+                        }
+                    }else{
+                        document.querySelector('.v11').innerHTML = x;
+                    }
+                ">=</button>
+            </div>
+            <div class="div6">
+                <button class="v61" onclick="
+                    document.querySelector('.v11').innerHTML = '0';
+                ">c</button>
+                
+                <button class="v62" onclick="
+                    l = document.querySelector('.v11').innerHTML.length
+                    if (l > 1){
+                        document.querySelector('.v11').innerHTML = document.querySelector('.v11').innerHTML.slice(0,-1);
+                    }else{
+
+                    document.querySelector('.v11').innerHTML = '0';
+                    }
+                ">x</button>
+            </div>
+        </div>
+
+        <script>
+            function shorten(){
+                let a = document.querySelector('.v11').innerHTML;
+                if (a.length > 11){
+                    document.querySelector('.v11').innerHTML = a.slice(0,11)+'...';
+                }
+            }
+            function first(){
+                if (document.querySelector('.v11').innerHTML === '0'){
+                        document.querySelector('.v11').innerHTML = '';
+                    }
+            }
+        </script>
+    </body>
+</html>
